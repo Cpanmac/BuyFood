@@ -7,7 +7,7 @@ var app = app || {};
 (function() {
 
 	app.Config = {};
-	app.Config.contextPath = "tldl"; // 项目名
+	app.Config.contextPath = "BuyFood"; // 项目名
 	app.Config.imgServerUrl = "."; // 资源路径
 	app.Config.projectPath = "."; // 项目路径
 	app.Config.isDebug = true;
