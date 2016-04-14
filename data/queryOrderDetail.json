@@ -1,0 +1,37 @@
+{
+	"data": {
+		"orderBean": {
+			"orderState":"未支付",
+			"orderMoney":101.00,
+			"orderNo":"20151130234",
+			"orderDate":"2015-11-30 22:10",
+			"sendDate":"2015-12-05 22:10",
+			"receiveMan":"老王",
+			"phone":"11011011011",
+			"address":"上海市牛逼路",
+			"remark":"这是备注"
+		},
+		"orderDetailList":[
+			{
+				"productBean":{
+					"name":"大白菜",
+					"smallpic":"/images/baicai.jpg"
+				},
+				"orderNum":"10",
+				"price":10.20
+			},
+			{
+				"productBean":{
+					"name":"小白菜",
+					"smallpic":"/images/baicai2.jpg"
+				},
+				"orderNum":"11",
+				"price":12.00
+			}
+		]
+	},
+	"exceptionMessage": "",
+	"isSuccess": true,
+	"message": "",
+	"success": true
+}

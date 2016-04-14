@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>要吃菜</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="css/light7.css">
+		<link rel="stylesheet" href="css/app.css?version=1">
+   		<link rel="stylesheet" href="css/module.css">
+		<script src="js/zepto.min.js"></script>
+	</head>
+
+	<body>
+		<div id="tldl-shop-car" class="page tldl-shop-car">
+			<header class="bar bar-nav">
+				<a class="button button-link button-nav pull-left back" href="javascript:javascript:void(0)">
+					<span class="icon icon-left"></span> 返回
+				</a>
+				<h1 class="title">购物车</h1>
+			</header>
+			<div class="content">
+			</div>
+		</div>
+		<script type="text/template" id="shop_car_tpl">
+			<!--购物车为空-->
+			<div id="emptyCart" {@if shoppingCartProductList.length>0} style="display:none" {@/if}>
+				<div class="shp-cart-empty">
+					<div class="empty-sign cart-empty-pic"></div>
+					<div class="empty-warning-text">
+						购物车空空如也，快去购物吧
+						<br> 或者登录查看您的购物车
+					</div>
+					<div class="empty-btn-wrapper">
+						<a href="index.html" class="external btn-jd-darkred btn-large">去逛逛</a>
+						<a href="orderList.html" class="btn-jd-gray btn-large external">我的订单</a>
+					</div>
+				</div>
+			</div>
+			<!--购物车为空end-->
+			{@if shoppingCartProductList.length>0}
+			<div class="list-block shopcar-list">
+				<ul id="shop_car_list">
+					<li class="item-content">
+						<div class="item-inner">
+							<div class="item-title font75">收货人:</div>
+							<div class="item-after">
+								<input type="text" placeholder="收货人" id="receiveMan" {@if data} value="^{data.receiveMan}" {@/if} />
+							</div>
+						</div>
+					</li>
+					<li class="item-content">
+						<div class="item-inner">
+							<div class="item-title font75">联系电话:</div>
+							<div class="item-after">
+								<input type="tel" placeholder="联系电话" id="phone" {@if data} value="^{data.phone}" {@/if} />
+							</div>
+						</div>
+					</li>
+					<li class="align-top">
+						<div class="item-content">
+							<div class="item-inner">
+								<div class="item-title label font75">收货地址:</div>
+								<div class="item-input">
+									<textarea id="address" placeholder="收货地址" readonly >{@if data} ^{data.address} {@/if}</textarea>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="item-content">
+						<div class="item-inner">
+							<div class="item-title font75">配送时间:</div>
+							<div class="item-after">
+								<input type="text" placeholder="闪电送，及时达" readonly id='datetime-picker' />
+							</div>
+						</div>
+					</li>
+					<li class="align-top">
+						<div class="item-content">
+							<div class="item-inner">
+								<div class="item-title label font75">备注:</div>
+								<div class="item-input">
+									<textarea id="remark" placeholder="可输入特殊要求"></textarea>
+								</div>
+							</div>
+						</div>
+					</li>
+					{@each shoppingCartProductList as p}
+					<li class="item-content product-list {@if !p.valid} valid {@/if}" style="position: relative;">
+						{@if !p.valid} 
+						<img src="^{'/images/yishixiao.png'|imgServerUrl}" class="valid-image">
+						{@/if}
+						<img src="^{'/images/shanchu.png'|imgServerUrl}"  class="del-image" data-id="^{p.productSerial}" data-productSpec="^{p.productSpec}" data-productName="^{p.productName}" >
+						<div class="item-media"><img src="^{p.smallpic|imgServerUrl}" style="width: 1.5rem;height: 1.5rem;"></div>
+						<div class="item-inner">
+							<div class="stroy-name">^{p.productName} 
+							<div style="font-size:.5rem">^{p.productSpec}</div>
+							</div>
+							<div class="item-after stroy-price">
+								￥^{p.productPrice}
+							</div>
+							<div class="item-after text-right">
+								<div class="mui-numbox" data-price="^{p.productPrice}" data-id="^{p.productSerial}" data-productSpec="^{p.productSpec}" data-count="^{p.number}">
+									<button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
+									<input class="mui-numbox-input" type="tel" value="^{p.number}">
+									<button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+								</div>
+							</div>
+						</div>
+					</li>
+					{@/each}
+					<li class="item-content">
+						<div class="item-inner">
+							<div class="item-title "><span class="font75" >共</span> <span class="color-red font85" style="line-height: 1.3rem;font-weight:500">￥<span id="count-price">^{price}</span></span></div>
+							<div class="item-after">
+								<button id="choice-ok" class="button button-fill button-danger">立即下单</button>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			{@/if}
+		</script>
+		<script>
+		  $.config = {
+		    router: false
+		  }
+		</script>
+		<script type="text/javascript" src="js/light7.js" ></script>
+		<script src="js/juicer-min.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/module-api.js"></script>
+		<script src="js/module/shopcar.js"></script>
+	</body>
+
+</html>

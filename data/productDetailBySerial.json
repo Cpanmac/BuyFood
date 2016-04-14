@@ -1,0 +1,24 @@
+{
+	"data": {
+		"productBean": {
+			"aliasName": "日本奶油草莓",
+			"bigPic": "/images/caomei2.jpg",
+			"brand": "苏菲",
+			"memoCpjs": "从日本引进品种，上海本地种植、新鲜采摘。草莓呈长圆锥形，表皮为宝石红般色泽，个头大，粉白色果肉滋味浓甜芳香，不酸，糯度高、极软嫩。因其如奶油般丝滑香甜得名。",
+			"name": "草莓",
+			"price": 60,
+			"productId": "SNPR001720",
+			"productSaleType": "普通商品",
+			"productType": "果菜类",
+			"salesVolume": 0,
+			"serial": "2",
+			"shelfLife": "5天",
+			"smallpic": "/images/caomei.jpg",
+			"spec": "500克"
+		}
+	},
+	"exceptionMessage": "",
+	"isSuccess": true,
+	"message": "",
+	"success": true
+}

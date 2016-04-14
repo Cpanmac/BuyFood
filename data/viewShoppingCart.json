@@ -1,0 +1,98 @@
+{
+	"data": {
+		"receiveMan": "测试用户",
+		"phone": "13211112222",
+		"address": "上海市普陀区XXX路",
+		"mobileShoppingCartBean": {
+			"mobileShoppingCartProductList": [
+				{
+					"number": 2,
+					"productName": "日本奶油草莓",
+					"productPrice": 60,
+					"productSerial": "2",
+					"productSpec": "500克",
+					"smallpic": "/images/caomei.jpg",
+					"valid": true
+				},{
+					"number": 1,
+					"productName": "小黄瓜",
+					"productPrice": 1,
+					"productSerial": "3",
+					"productSpec": "斤",
+					"smallpic": "/images/huanggua.jpg",
+					"valid": true
+				}, {
+					"number": 1,
+					"productName": "胡萝卜",
+					"productPrice": 4,
+					"productSerial": "4",
+					"productSpec": "斤",
+					"smallpic": "/images/huluobo.jpg",
+					"valid": true
+				}, {
+					"number": 1,
+					"productName": "土豆",
+					"productPrice": 2,
+					"productSerial": "5",
+					"productSpec": "斤",
+					"smallpic": "http://www.yaochicai.com/tldl/uploadimages/Productsmall/2057.jpg",
+					"valid": true
+				}, {
+					"number": 1,
+					"productName": "大番茄",
+					"productPrice": 5,
+					"productSerial": "6",
+					"productSpec": "斤",
+					"smallpic": "/images/fanqie.jpg",
+					"valid": true
+				},{
+					"number": 1,
+					"productName": "生冻黑虎虾",
+					"productPrice": 78,
+					"productSerial": "7",
+					"productSpec": "500克/盒",
+					"smallpic": "/images/xia.jpg",
+					"valid": true
+				},{
+					"number": 1,
+					"productName": "挪威三文鱼圆切",
+					"productPrice": 65,
+					"productSerial": "8",
+					"productSpec": "500克",
+					"smallpic": "/images/sanwenyu.jpg",
+					"valid": true
+				},{
+					"number": 1,
+					"productName": "智利车厘子",
+					"productPrice": 108,
+					"productSerial": "9",
+					"productSpec": "500克",
+					"smallpic": "/images/chelizi.jpg",
+					"valid": true
+				},{
+					"number": 1,
+					"productName": "美国柠檬",
+					"productPrice": 108,
+					"productSerial": "10",
+					"productSpec": "500克",
+					"smallpic": "/images/ningmeng.jpg",
+					"valid": true
+				},{
+					"number": 1,
+					"productName": "土鸡蛋",
+					"productPrice": 108,
+					"productSerial": "11",
+					"productSpec": "500克",
+					"smallpic": "/images/tujidan.jpg",
+					"valid": true
+				}
+			],
+			"number": 7,
+			"price": 27
+		}
+	},
+	"exceptionMessage": "",
+	"isSuccess": true,
+	"message": "",
+	"success": true
+}

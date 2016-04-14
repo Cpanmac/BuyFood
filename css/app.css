@@ -1,0 +1,263 @@
+html,body{
+	overflow-x: hidden;
+}
+
+/**字体**/
+.font75{
+	font-size: .75rem!important;
+}
+.font7{
+	font-size: .7rem!important;
+}
+.font85{
+	font-size: .85rem!important;
+}
+
+
+/**颜色**/
+.color-gray2{
+	color: #686868!important;
+}
+.color-grey {
+  color: #8d8d8d !important;
+}
+.color-green{
+	color:green!important;
+}
+.color-orange{
+	color: #ff5000!important;
+}
+.color-red{
+	color:#F00B0D!important;
+}
+.color-success {
+    color: #4cd964!important;
+}
+.color-warning {
+    color: #f60!important;
+}
+.color-primary {
+    color: #0894ec!important;
+}
+.color-danger{
+	color:#f6383a!important ;
+}
+/**方向**/
+.text-right{
+	text-align: right;
+}
+.float-right {
+  float: right !important;
+}
+.float-left {
+  float: left !important;
+}
+
+.bar-tab .tab-item.active, .bar-tab .tab-item:active{
+	color: #ff5000;
+}
+.bar .button-link{
+	color: #FFFFFF;
+}
+
+/**bar*/
+.bar-nav{
+	background-color:#2AC845;
+}
+.bar-tab{
+	background-color: #2AC845;
+}
+.bar-tab .tab-item{
+	color:#FFFFFF ;
+}
+.bar-tab .tab-item.active, .bar-tab .tab-item:active{
+	color:#007AFF ;
+}
+.title{
+	color: white;
+}
+/**tab*/
+.buttons-tab .button.active {
+    color: #ff5000;
+    border-color: #ff5000;
+}
+
+/**提示框**/
+.cart-pop {
+    position: absolute;
+    width: 228px;
+    background-color: rgba(0,0,0,0.65);
+    color: #fff;
+    border-radius: 2px;
+    border: 1px solid #3d3c3b;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    bottom: 234px; 
+    z-index: 9999; 
+    left: -webkit-calc((100% - 230px)/2); 
+    left: -moz-calc((100% - 230px)/2); 
+    left: calc((100% - 230px)/2); 
+    transform-origin: 0px 0px 0px;
+ 	opacity: 1; 
+ 	transform: scale(1, 1); 
+}
+.cart-pop .ico-succ {
+    padding: 11px 15px 9px 52px;
+    background: url(http://st.360buyimg.com/item/images/html5/new/icon_suc.png) 11px 20px no-repeat;
+    border-bottom: 1px solid rgba(130,128,127,0.5);
+    text-shadow: 0 1px 0 #000;
+}
+.cart-pop .ico-succ span {
+    display: block;
+}
+.cart-pop .att-succ {
+    font-size: 16px;
+}
+.cart-pop .cart-succ {
+    font-size: 14px;
+}
+
+/**数字输入框**/
+/*input[type=tel]{
+    line-height: 21px;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    -webkit-user-select: text;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 3px;
+    outline: 0;
+    background-color: #fff;
+    -webkit-appearance: none;
+}*/
+.product-list .item-after{
+	
+	max-height: 2rem;
+}
+.mui-numbox {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 100px;
+    height:2rem;
+    padding: 0 30px;
+    vertical-align: top;
+    vertical-align: middle;
+    border: solid 1px #bbb;
+    border-radius: 3px;
+    background-color: #efeff4;
+}
+.mui-numbox .mui-numbox-btn-minus {
+    left: 0;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.mui-numbox .mui-numbox-input {
+	background-color: #FFFFFF!important;
+    display: inline-block!important;
+    width: 100%!important;
+    height: 100%!important;
+    min-height: 1.4rem;
+    font-size: .65rem!important;
+    margin: 0!important;
+    padding: 0 3px!important;
+    text-align: center!important;
+    word-break: normal!important;
+    border: none!important;
+    border-right: solid 1px #ccc!important;
+    border-left: solid 1px #ccc!important;
+    border-radius: 0!important;
+}
+.mui-numbox .mui-numbox-btn-plus {
+    right: 0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.mui-numbox [class*=mui-numbox-btn] {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 100%;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    width: 30px;
+    height: 100%;
+    padding: 0;
+    color: #555;
+    border: none;
+    border-radius: 0;
+    background-color: #f9f9f9;
+}
+
+.u-flyer {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  position: fixed;
+  z-index: 9999;
+}
+
+
+/**解决1px border问题*/
+.ui-border-t {
+	border-top: 1px solid #e0e0e0!important
+}
+
+.ui-border-b {
+	border-bottom: 1px solid #e0e0e0!important
+}
+.ui-border-tb {
+	border-top: #e0e0e0 1px solid!important;
+	border-bottom: #e0e0e0 1px solid!important;
+	background-image: none!important
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:2) {
+	.ui-border {
+		position: relative;
+		border: 0!important
+	}
+	.ui-border-t,
+	.ui-border-b,
+	.ui-border-tb {
+		border: 0!important
+	}
+	.ui-border-t {
+		background-position: left top!important;
+		background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0))!important
+	}
+	.ui-border-b {
+		background-position: left bottom!important;
+		background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0))!important
+	}
+	.ui-border-t,
+	.ui-border-b,
+	.ui-border-tb {
+		background-repeat: repeat-x!important;
+		-webkit-background-size: 100% 1px!important
+	}
+	.ui-border-tb {
+		background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0)), -webkit-gradient(linear, left top, left bottom, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0));!important
+		background-position: top, bottom!important
+	}
+	.ui-border:after {
+		content: "";
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0)), -webkit-gradient(linear, left top, right top, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0)), -webkit-gradient(linear, left top, left bottom, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0)), -webkit-gradient(linear, right top, left top, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0))!important;
+		-webkit-background-size: 100% 1px, 1px 100%, 100% 1px, 1px 100%;
+		background-size: 100% 1px, 1px 100%, 100% 1px, 1px 100%;
+		-webkit-background-size: 100% 1px, 1px 100%, 100% 1px, 1px 100%;
+		background-size: 100% 1px, 1px 100%, 100% 1px, 1px 100%;
+		background-repeat: no-repeat;
+		background-position: top, right, bottom, left;
+		padding: 1px;
+		-webkit-box-sizing: border-box;
+		z-index: 10;
+		pointer-events: none
+	}
+}

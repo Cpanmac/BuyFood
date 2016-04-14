@@ -1,0 +1,58 @@
+{
+	"data": {
+		"productTypeList": [
+			{
+				"displayOrder": 1,
+				"vcCode": "PRODUCT_TYPE",
+				"vcName": "叶菜类",
+				"vcParentCode": "333",
+				"vcValue": "叶菜类"
+			}, {
+				"displayOrder": 2,
+				"vcCode": "PRODUCT_TYPE",
+				"vcName": "果菜类",
+				"vcParentCode": "333",
+				"vcValue": "果菜类"
+			},
+			{
+				"displayOrder": 2,
+				"vcCode": "PRODUCT_TYPE",
+				"vcName": "肉类",
+				"vcParentCode": "333",
+				"vcValue": "肉类"
+			},
+			{
+				"displayOrder": 2,
+				"vcCode": "PRODUCT_TYPE",
+				"vcName": "海鲜类",
+				"vcParentCode": "333",
+				"vcValue": "海鲜类"
+			},
+			{
+				"displayOrder": 2,
+				"vcCode": "PRODUCT_TYPE",
+				"vcName": "大肉",
+				"vcParentCode": "333",
+				"vcValue": "大肉"
+			},
+			{
+				"displayOrder": 2,
+				"vcCode": "PRODUCT_TYPE",
+				"vcName": "进口",
+				"vcParentCode": "333",
+				"vcValue": "进口"
+			},
+			{
+				"displayOrder": 2,
+				"vcCode": "PRODUCT_TYPE",
+				"vcName": "折扣",
+				"vcParentCode": "333",
+				"vcValue": "折扣"
+			}
+		]
+	},
+	"exceptionMessage": "",
+	"isSuccess": true,
+	"message": "",
+	"success": true
+}
